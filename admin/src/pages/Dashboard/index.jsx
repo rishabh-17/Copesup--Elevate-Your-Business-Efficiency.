@@ -2,6 +2,8 @@ import React from "react";
 import DateFilter from "../../components/DateFilter";
 import Chart from "../../components/Chart";
 import HolidayWidget from "../../components/HolidayWidget";
+import LeaveWidget from "../../components/LeaveWidget";
+import RequestWidget from "../../components/RequestWidget";
 
 export default function index() {
   const taskData = {
@@ -216,6 +218,12 @@ export default function index() {
       <div className="grid grid-cols-3 w-full gap-3">
         <div className="bg-white p-2 h-[380px] overflow-auto">
           <HolidayWidget />
+        </div>
+        {/* <div className="bg-white p-2 h-[380px] overflow-auto">
+          <LeaveWidget />
+        </div> */}
+        <div className="bg-white p-2 h-[380px] overflow-auto">
+          <RequestWidget />
         </div>
       </div>
     </div>
