@@ -1,8 +1,8 @@
 import React from "react";
 import { Badge, Descriptions } from "antd";
 import ActionDropdown from "../../components/ActionDropdown";
-import { DownOutlined } from "@ant-design/icons";
-import { Dropdown, Space } from "antd";
+// import { DownOutlined } from "@ant-design/icons";
+// import { Dropdown, Space } from "antd";
 const actionMenu = [
   {
     label: <a>Edit</a>,
@@ -125,9 +125,9 @@ const handleDisable = () => {
 
 const App = () => (
   <>
-    <Descriptions title="Client Info" bordered items={items} />
+    <Descriptions title="User Info" bordered items={items} />
     <ActionDropdown
-      type="clients"
+      type="users"
       handleDelete={handleDelete}
       handleDisable={handleDisable}
     />

@@ -7,13 +7,11 @@ import {
   OrganizationDetails,
   EditOrganization,
 } from "./pages/Organizations";
-import {
-  ClientList,
-  CreateClient,
-  ClientDetails,
-  EditClient,
-} from "./pages/Clients";
+import { UserList, CreateUser, UserDetails, EditUser } from "./pages/Users";
+import { Attendence } from "./pages/Attendence";
+import { RolesList } from "./pages/Roles";
 import Mainlayout from "./components/Mainlayout";
+import LeavesRequests from "./pages/Leave/LeaveRequests";
 function Routes() {
   let element = useRoutes([
     {
@@ -26,7 +24,7 @@ function Routes() {
     },
 
     {
-      path: "clients",
+      path: "roles",
       element: (
         <Mainlayout selectedKey={"2"}>
           <Outlet />
@@ -35,25 +33,12 @@ function Routes() {
       children: [
         {
           path: "",
-          element: <ClientList />,
-        },
-        {
-          path: "create",
-          element: <CreateClient />,
-        },
-        {
-          path: "details/:id",
-          element: <ClientDetails />,
-        },
-        {
-          path: "edit/:id",
-          element: <EditClient />,
+          element: <RolesList />,
         },
       ],
     },
-
     {
-      path: "organizations",
+      path: "users",
       element: (
         <Mainlayout selectedKey={"3"}>
           <Outlet />
@@ -62,19 +47,48 @@ function Routes() {
       children: [
         {
           path: "",
-          element: <OrganizationList />,
+          element: <UserList />,
         },
         {
           path: "create",
-          element: <CreateOrganization />,
+          element: <CreateUser />,
         },
         {
           path: "details/:id",
-          element: <OrganizationDetails />,
+          element: <UserDetails />,
         },
         {
           path: "edit/:id",
-          element: <EditOrganization />,
+          element: <EditUser />,
+        },
+      ],
+    },
+
+    {
+      path: "attendence",
+      element: (
+        <Mainlayout selectedKey={"4"}>
+          <Outlet />
+        </Mainlayout>
+      ),
+      children: [
+        {
+          path: "",
+          element: <Attendence />,
+        },
+      ],
+    },
+    {
+      path: "leave",
+      element: (
+        <Mainlayout selectedKey={"5"}>
+          <Outlet />
+        </Mainlayout>
+      ),
+      children: [
+        {
+          path: "",
+          element: <LeavesRequests />,
         },
       ],
     },

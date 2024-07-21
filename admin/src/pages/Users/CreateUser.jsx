@@ -18,10 +18,10 @@ import {
 } from "antd";
 const { RangePicker } = DatePicker;
 const { TextArea } = Input;
-export default function CreateClient() {
+export default function CreateUser() {
   return (
     <div>
-      <h2 className="page-title font-bold text-lg">Create Client</h2>
+      <h2 className="page-title font-bold text-lg">Create User</h2>
       <CreateForm />
     </div>
   );

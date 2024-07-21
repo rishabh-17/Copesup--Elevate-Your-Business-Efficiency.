@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function EditClient() {
+export default function EditUser() {
   return <div></div>;
 }

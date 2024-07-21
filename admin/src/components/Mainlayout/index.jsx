@@ -6,9 +6,11 @@ import {
   PieChartOutlined,
   UserOutlined,
   VideoCameraOutlined,
-  BuildOutlined,
+  SnippetsOutlined,
   BellOutlined,
   SettingOutlined,
+  UnlockOutlined,
+  CalendarOutlined,
 } from "@ant-design/icons";
 import { Avatar, Space } from "antd";
 import NotificationDrawer from "../NotificatonDrawer";
@@ -88,19 +90,53 @@ const App = ({ children, selectedKey }) => {
               },
               {
                 key: "2",
-                icon: <UserOutlined />,
-                label: "Clients",
+                icon: <UnlockOutlined />,
+                label: "Roles",
                 onClick: () => {
-                  navigate("/clients");
+                  navigate("/roles");
                 },
               },
               {
                 key: "3",
-                icon: <BuildOutlined />,
-                label: "Organizations",
+                icon: <UserOutlined />,
+                label: "Users",
                 onClick: () => {
-                  navigate("/organizations");
+                  navigate("/users");
                 },
+              },
+              {
+                key: "4",
+                icon: <CalendarOutlined />,
+                label: "Attendence",
+                onClick: () => {
+                  navigate("/attendence");
+                },
+              },
+              {
+                key: "5",
+                icon: <SnippetsOutlined />,
+                label: "Leave",
+                children: [
+                  {
+                    key: "5-1",
+                    label: "Approvals",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "5-2",
+                    label: `Holidays`,
+                  },
+                  {
+                    key: "5-3",
+                    label: `Weekoffs`,
+                  },
+                  {
+                    key: "5-4",
+                    label: `Compensations`,
+                  },
+                ],
               },
             ]}
           />

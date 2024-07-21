@@ -5,7 +5,7 @@ import { FloatButton } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 
-export default function ClientList() {
+export default function UserList() {
   const navigate = useNavigate();
   const columns = [
     {
@@ -40,7 +40,7 @@ export default function ClientList() {
       title: "Action",
       dataIndex: "",
       key: "x",
-      render: () => <Link to="/clients/details/1">View</Link>,
+      render: () => <Link to="/users/details/1">View</Link>,
     },
   ];
   const data = [
@@ -81,8 +81,8 @@ export default function ClientList() {
       <Table columns={columns} data={data} onChange={onChange} />
       <FloatButton
         icon={<PlusOutlined />}
-        tooltip={<div>Add Client</div>}
-        onClick={() => navigate("/clients/create")}
+        tooltip={<div>Add User</div>}
+        onClick={() => navigate("/users/create")}
       />
     </div>
   );
