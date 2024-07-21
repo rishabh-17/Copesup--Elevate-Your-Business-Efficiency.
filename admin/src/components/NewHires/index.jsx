@@ -4,27 +4,27 @@ const data = [
   {
     username: "John Brown",
     date: "2022-11-11",
-    reason: "Leave for visiting goa with my...",
+    designation: "Software Engineer",
   },
   {
     username: "Will Smith",
     date: "2022-08-15",
-    reason: "Leave for visiting goa with my...",
+    designation: "UI/UX Designer",
   },
   {
     username: "Sachin Tendulkar",
     date: "2022-12-25",
-    reason: "Leave for visiting goa with my...",
+    designation: "Devops Engineer",
   },
   {
     username: "brock lewis",
     date: "2022-02-02",
-    reason: "Leave for visiting goa with my...",
+    designation: "Product Manager",
   },
 ];
 const App = () => (
   <List
-    header={<div className="font-bold">Leave for Approval</div>}
+    header={<div className="font-bold">New Hires</div>}
     size="small"
     itemLayout="horizontal"
     dataSource={data}
@@ -37,7 +37,7 @@ const App = () => (
               <p>{item.date}</p>
             </div>
           }
-          description={item.reason}
+          description={item.designation}
         />
       </List.Item>
     )}

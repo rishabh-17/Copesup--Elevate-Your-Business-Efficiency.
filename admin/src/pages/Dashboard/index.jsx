@@ -4,6 +4,8 @@ import Chart from "../../components/Chart";
 import HolidayWidget from "../../components/HolidayWidget";
 import LeaveWidget from "../../components/LeaveWidget";
 import RequestWidget from "../../components/RequestWidget";
+import NewHires from "../../components/NewHires";
+import Announcement from "../../components/Announcement";
 
 export default function index() {
   const taskData = {
@@ -224,6 +226,14 @@ export default function index() {
         </div> */}
         <div className="bg-white p-2 h-[380px] overflow-auto">
           <RequestWidget />
+        </div>
+        <div className="bg-white p-2 h-[380px] overflow-auto">
+          <NewHires />
+        </div>
+      </div>
+      <div className="grid grid-cols-3 w-full gap-3">
+        <div className="bg-white p-2 h-[380px] overflow-auto">
+          <Announcement />
         </div>
       </div>
     </div>
