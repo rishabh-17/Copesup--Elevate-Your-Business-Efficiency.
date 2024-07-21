@@ -1,6 +1,7 @@
 import React from "react";
 import DateFilter from "../../components/DateFilter";
 import Chart from "../../components/Chart";
+import HolidayWidget from "../../components/HolidayWidget";
 
 export default function index() {
   const taskData = {
@@ -210,6 +211,11 @@ export default function index() {
             series={pieData?.series}
             type={"radialBar"}
           />
+        </div>
+      </div>
+      <div className="grid grid-cols-3 w-full gap-3">
+        <div className="bg-white p-2 h-[380px] overflow-auto">
+          <HolidayWidget />
         </div>
       </div>
     </div>
