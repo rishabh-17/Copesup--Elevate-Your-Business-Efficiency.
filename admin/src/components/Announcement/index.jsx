@@ -6,7 +6,7 @@ const data = [
     date: "2022-11-11, 11:45 AM",
   },
   {
-    title: "Release is phosphoned",
+    title: "Release is phosphoned...",
     date: "2022-08-15, 11:45 AM",
   },
 ];

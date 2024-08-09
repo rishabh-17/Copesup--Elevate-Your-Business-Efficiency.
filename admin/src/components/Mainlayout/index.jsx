@@ -11,6 +11,9 @@ import {
   SettingOutlined,
   UnlockOutlined,
   CalendarOutlined,
+  PoundCircleOutlined,
+  BankOutlined,
+  DatabaseOutlined,
 } from "@ant-design/icons";
 import { Avatar, Space } from "antd";
 import NotificationDrawer from "../NotificatonDrawer";
@@ -90,6 +93,210 @@ const App = ({ children, selectedKey }) => {
               },
               {
                 key: "2",
+                icon: <SnippetsOutlined />,
+                label: "Organization",
+                children: [
+                  {
+                    key: "2-1",
+                    label: "Users",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "2-2",
+                    label: `Roles`,
+                  },
+                ],
+              },
+              {
+                key: "3",
+                icon: <SnippetsOutlined />,
+                label: "HRMS",
+                children: [
+                  {
+                    key: "3-1",
+                    label: "Employess",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "3-2",
+                    label: `Attendence`,
+                  },
+                  {
+                    key: "3-3",
+                    label: `Leaves`,
+                  },
+                  {
+                    key: "3-4",
+                    label: `Holidays`,
+                  },
+                  {
+                    key: "3-5",
+                    label: `Payroll`,
+                  },
+                  {
+                    key: "3-6",
+                    label: `Hirings`,
+                  },
+                  {
+                    key: "3-7",
+                    label: `Appraisals`,
+                  },
+                  {
+                    key: "3-8",
+                    label: `Referals`,
+                  },
+                ],
+              },
+              {
+                key: "2",
+                icon: <SnippetsOutlined />,
+                label: "Organization",
+                children: [
+                  {
+                    key: "2-1",
+                    label: "Users",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "2-2",
+                    label: `Roles`,
+                  },
+                ],
+              },
+              {
+                key: "2",
+                icon: <SnippetsOutlined />,
+                label: "Organization",
+                children: [
+                  {
+                    key: "2-1",
+                    label: "Users",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "2-2",
+                    label: `Roles`,
+                  },
+                ],
+              },
+              {
+                key: "2",
+                icon: <SnippetsOutlined />,
+                label: "Organization",
+                children: [
+                  {
+                    key: "2-1",
+                    label: "Users",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "2-2",
+                    label: `Roles`,
+                  },
+                ],
+              },
+              {
+                key: "2",
+                icon: <SnippetsOutlined />,
+                label: "Organization",
+                children: [
+                  {
+                    key: "2-1",
+                    label: "Users",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "2-2",
+                    label: `Roles`,
+                  },
+                ],
+              },
+              {
+                key: "2",
+                icon: <SnippetsOutlined />,
+                label: "Organization",
+                children: [
+                  {
+                    key: "2-1",
+                    label: "Users",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "2-2",
+                    label: `Roles`,
+                  },
+                ],
+              },
+              {
+                key: "2",
+                icon: <SnippetsOutlined />,
+                label: "Organization",
+                children: [
+                  {
+                    key: "2-1",
+                    label: "Users",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "2-2",
+                    label: `Roles`,
+                  },
+                ],
+              },
+              {
+                key: "2",
+                icon: <SnippetsOutlined />,
+                label: "Organization",
+                children: [
+                  {
+                    key: "2-1",
+                    label: "Users",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "2-2",
+                    label: `Roles`,
+                  },
+                ],
+              },
+              {
+                key: "2",
+                icon: <SnippetsOutlined />,
+                label: "Organization",
+                children: [
+                  {
+                    key: "2-1",
+                    label: "Users",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "2-2",
+                    label: `Roles`,
+                  },
+                ],
+              },
+              {
+                key: "2",
                 icon: <UnlockOutlined />,
                 label: "Roles",
                 onClick: () => {
@@ -137,6 +344,118 @@ const App = ({ children, selectedKey }) => {
                     label: `Compensations`,
                   },
                 ],
+              },
+              {
+                key: "6",
+                icon: <SnippetsOutlined />,
+                label: "Shifts",
+                onClick: () => {
+                  navigate("/shifts");
+                },
+              },
+              {
+                key: "7",
+                icon: <PoundCircleOutlined />,
+                label: "Expense",
+                onClick: () => {
+                  navigate("/expense");
+                },
+              },
+              {
+                key: "8",
+                icon: <DatabaseOutlined />,
+                label: "Inventory",
+                onClick: () => {
+                  navigate("/inventory");
+                },
+              },
+              {
+                key: "9",
+                icon: <BankOutlined />,
+                label: "Assets",
+                onClick: () => {
+                  navigate("/assets");
+                },
+              },
+              {
+                key: "10",
+                icon: <BankOutlined />,
+                label: "Teams",
+                onClick: () => {
+                  navigate("/assets");
+                },
+              },
+              {
+                key: "11",
+                icon: <BankOutlined />,
+                label: "Leads",
+                onClick: () => {
+                  navigate("/assets");
+                },
+              },
+              {
+                key: "9",
+                icon: <BankOutlined />,
+                label: "Clients",
+                onClick: () => {
+                  navigate("/assets");
+                },
+              },
+              {
+                key: "9",
+                icon: <BankOutlined />,
+                label: "Hirings",
+                onClick: () => {
+                  navigate("/assets");
+                },
+              },
+              {
+                key: "9",
+                icon: <BankOutlined />,
+                label: "Inspections",
+                onClick: () => {
+                  navigate("/assets");
+                },
+              },
+              {
+                key: "9",
+                icon: <BankOutlined />,
+                label: "Forms",
+                onClick: () => {
+                  navigate("/assets");
+                },
+              },
+              {
+                key: "9",
+                icon: <BankOutlined />,
+                label: "Flows",
+                onClick: () => {
+                  navigate("/assets");
+                },
+              },
+              {
+                key: "9",
+                icon: <BankOutlined />,
+                label: "Events",
+                onClick: () => {
+                  navigate("/assets");
+                },
+              },
+              {
+                key: "9",
+                icon: <BankOutlined />,
+                label: "Payroll",
+                onClick: () => {
+                  navigate("/assets");
+                },
+              },
+              {
+                key: "9",
+                icon: <BankOutlined />,
+                label: "Training",
+                onClick: () => {
+                  navigate("/assets");
+                },
               },
             ]}
           />
