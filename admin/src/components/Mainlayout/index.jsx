@@ -106,6 +106,9 @@ const App = ({ children, selectedKey }) => {
                   {
                     key: "2-2",
                     label: `Roles`,
+                    onClick: () => {
+                      navigate("/roles");
+                    },
                   },
                 ],
               },
@@ -124,6 +127,9 @@ const App = ({ children, selectedKey }) => {
                   {
                     key: "3-2",
                     label: `Attendence`,
+                    onClick: () => {
+                      navigate("/attendence");
+                    },
                   },
                   {
                     key: "3-3",
@@ -149,313 +155,219 @@ const App = ({ children, selectedKey }) => {
                     key: "3-8",
                     label: `Referals`,
                   },
-                ],
-              },
-              {
-                key: "2",
-                icon: <SnippetsOutlined />,
-                label: "Organization",
-                children: [
                   {
-                    key: "2-1",
-                    label: "Users",
-                    onClick: () => {
-                      navigate("/leave");
-                    },
-                  },
-                  {
-                    key: "2-2",
-                    label: `Roles`,
+                    key: "3-8",
+                    label: `Benificiaries`,
                   },
                 ],
-              },
-              {
-                key: "2",
-                icon: <SnippetsOutlined />,
-                label: "Organization",
-                children: [
-                  {
-                    key: "2-1",
-                    label: "Users",
-                    onClick: () => {
-                      navigate("/leave");
-                    },
-                  },
-                  {
-                    key: "2-2",
-                    label: `Roles`,
-                  },
-                ],
-              },
-              {
-                key: "2",
-                icon: <SnippetsOutlined />,
-                label: "Organization",
-                children: [
-                  {
-                    key: "2-1",
-                    label: "Users",
-                    onClick: () => {
-                      navigate("/leave");
-                    },
-                  },
-                  {
-                    key: "2-2",
-                    label: `Roles`,
-                  },
-                ],
-              },
-              {
-                key: "2",
-                icon: <SnippetsOutlined />,
-                label: "Organization",
-                children: [
-                  {
-                    key: "2-1",
-                    label: "Users",
-                    onClick: () => {
-                      navigate("/leave");
-                    },
-                  },
-                  {
-                    key: "2-2",
-                    label: `Roles`,
-                  },
-                ],
-              },
-              {
-                key: "2",
-                icon: <SnippetsOutlined />,
-                label: "Organization",
-                children: [
-                  {
-                    key: "2-1",
-                    label: "Users",
-                    onClick: () => {
-                      navigate("/leave");
-                    },
-                  },
-                  {
-                    key: "2-2",
-                    label: `Roles`,
-                  },
-                ],
-              },
-              {
-                key: "2",
-                icon: <SnippetsOutlined />,
-                label: "Organization",
-                children: [
-                  {
-                    key: "2-1",
-                    label: "Users",
-                    onClick: () => {
-                      navigate("/leave");
-                    },
-                  },
-                  {
-                    key: "2-2",
-                    label: `Roles`,
-                  },
-                ],
-              },
-              {
-                key: "2",
-                icon: <SnippetsOutlined />,
-                label: "Organization",
-                children: [
-                  {
-                    key: "2-1",
-                    label: "Users",
-                    onClick: () => {
-                      navigate("/leave");
-                    },
-                  },
-                  {
-                    key: "2-2",
-                    label: `Roles`,
-                  },
-                ],
-              },
-              {
-                key: "2",
-                icon: <SnippetsOutlined />,
-                label: "Organization",
-                children: [
-                  {
-                    key: "2-1",
-                    label: "Users",
-                    onClick: () => {
-                      navigate("/leave");
-                    },
-                  },
-                  {
-                    key: "2-2",
-                    label: `Roles`,
-                  },
-                ],
-              },
-              {
-                key: "2",
-                icon: <UnlockOutlined />,
-                label: "Roles",
-                onClick: () => {
-                  navigate("/roles");
-                },
-              },
-              {
-                key: "3",
-                icon: <UserOutlined />,
-                label: "Users",
-                onClick: () => {
-                  navigate("/users");
-                },
               },
               {
                 key: "4",
-                icon: <CalendarOutlined />,
-                label: "Attendence",
-                onClick: () => {
-                  navigate("/attendence");
-                },
+                icon: <SnippetsOutlined />,
+                label: "Finance",
+                children: [
+                  {
+                    key: "4-1",
+                    label: "Accounting",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "4-2",
+                    label: `Invoicing`,
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "4-2",
+                    label: `Expenses`,
+                    onClick: () => {
+                      navigate("/expense");
+                    },
+                  },
+                  {
+                    key: "4-2",
+                    label: `Sign`,
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                ],
               },
               {
                 key: "5",
                 icon: <SnippetsOutlined />,
-                label: "Leave",
+                label: "Supply Chain",
                 children: [
                   {
                     key: "5-1",
-                    label: "Approvals",
+                    label: "Assets",
                     onClick: () => {
                       navigate("/leave");
                     },
                   },
                   {
                     key: "5-2",
-                    label: `Holidays`,
+                    label: "Inventory",
+                    onClick: () => {
+                      navigate("/inventory");
+                    },
                   },
                   {
                     key: "5-3",
-                    label: `Weekoffs`,
+                    label: "Orders",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
                   },
                   {
-                    key: "5-4",
-                    label: `Compensations`,
+                    key: "5-3",
+                    label: "Lease",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
                   },
                 ],
               },
               {
                 key: "6",
                 icon: <SnippetsOutlined />,
-                label: "Shifts",
-                onClick: () => {
-                  navigate("/shifts");
-                },
+                label: "Sales",
+                children: [
+                  {
+                    key: "6-1",
+                    label: "Clients",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "6-2",
+                    label: `Lead Pipeline`,
+                  },
+                ],
               },
               {
                 key: "7",
-                icon: <PoundCircleOutlined />,
-                label: "Expense",
-                onClick: () => {
-                  navigate("/expense");
-                },
+                icon: <SnippetsOutlined />,
+                label: "Marketing",
+                children: [
+                  {
+                    key: "7-1",
+                    label: "Email",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "7-2",
+                    label: `SMS`,
+                  },
+                  {
+                    key: "7-2",
+                    label: `Social Media`,
+                  },
+                ],
               },
               {
                 key: "8",
-                icon: <DatabaseOutlined />,
-                label: "Inventory",
-                onClick: () => {
-                  navigate("/inventory");
-                },
+                icon: <SnippetsOutlined />,
+                label: "Productivity",
+                children: [
+                  {
+                    key: "8-1",
+                    label: "Performance",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "8-2",
+                    label: "Attendence",
+                    onClick: () => {
+                      navigate("/attendence");
+                    },
+                  },
+                  {
+                    key: "8-3",
+                    label: "Tasks",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "8-4",
+                    label: "Shifts",
+                    onClick: () => {
+                      navigate("/shifts");
+                    },
+                  },
+                  {
+                    key: "8-5",
+                    label: "Team",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "8-6",
+                    label: "Training",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                ],
               },
               {
                 key: "9",
-                icon: <BankOutlined />,
-                label: "Assets",
-                onClick: () => {
-                  navigate("/assets");
-                },
-              },
-              {
-                key: "10",
-                icon: <BankOutlined />,
-                label: "Teams",
-                onClick: () => {
-                  navigate("/assets");
-                },
-              },
-              {
-                key: "11",
-                icon: <BankOutlined />,
-                label: "Leads",
-                onClick: () => {
-                  navigate("/assets");
-                },
-              },
-              {
-                key: "9",
-                icon: <BankOutlined />,
-                label: "Clients",
-                onClick: () => {
-                  navigate("/assets");
-                },
-              },
-              {
-                key: "9",
-                icon: <BankOutlined />,
-                label: "Hirings",
-                onClick: () => {
-                  navigate("/assets");
-                },
-              },
-              {
-                key: "9",
-                icon: <BankOutlined />,
-                label: "Inspections",
-                onClick: () => {
-                  navigate("/assets");
-                },
-              },
-              {
-                key: "9",
-                icon: <BankOutlined />,
-                label: "Forms",
-                onClick: () => {
-                  navigate("/assets");
-                },
-              },
-              {
-                key: "9",
-                icon: <BankOutlined />,
-                label: "Flows",
-                onClick: () => {
-                  navigate("/assets");
-                },
-              },
-              {
-                key: "9",
-                icon: <BankOutlined />,
-                label: "Events",
-                onClick: () => {
-                  navigate("/assets");
-                },
-              },
-              {
-                key: "9",
-                icon: <BankOutlined />,
-                label: "Payroll",
-                onClick: () => {
-                  navigate("/assets");
-                },
-              },
-              {
-                key: "9",
-                icon: <BankOutlined />,
-                label: "Training",
-                onClick: () => {
-                  navigate("/assets");
-                },
+                icon: <SnippetsOutlined />,
+                label: "Management",
+                children: [
+                  {
+                    key: "9-1",
+                    label: "Forms",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "9-2",
+                    label: "Flows",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "9-3",
+                    label: "Inspections",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "9-4",
+                    label: "Appointments",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "9-5",
+                    label: "Events",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                  {
+                    key: "9-6",
+                    label: "Documents",
+                    onClick: () => {
+                      navigate("/leave");
+                    },
+                  },
+                ],
               },
             ]}
           />
